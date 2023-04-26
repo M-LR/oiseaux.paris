@@ -1,0 +1,16 @@
+{
+    "name": "mleray/www.oiseaux.paris",
+    "description": "les oiseaux de Paris et de sa région",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mlr",
+            "email": "leraymathieu@gmail.com"
+        }
+    ],
+    "require": {}
+}
