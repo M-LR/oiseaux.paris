@@ -1,6 +1,6 @@
 # Oiseaux de Paris - les oiseaux de Paris et de sa région
 
-### version du 10 fev. 2023
+### version du 26 avr. 2023
 
 ```sh
   "name": "www.oiseaux.paris",
