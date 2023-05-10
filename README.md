@@ -29,3 +29,9 @@
   cd public/
   php -S localhost:8000
 ```
+
+## Tests
+```sh
+  //php unit
+  php vendor/bin/phpunit tests/ExampleTest.php
+```
