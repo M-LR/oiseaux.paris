@@ -1,6 +1,7 @@
 {
     "name": "mleray/www.oiseaux.paris",
     "description": "les oiseaux de Paris et de sa région",
+    "license": "proprietary",
     "autoload": {
         "psr-4": {
             "App\\": "src/"
