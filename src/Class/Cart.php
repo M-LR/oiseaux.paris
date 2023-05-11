@@ -6,38 +6,31 @@ namespace App\Class;
 class Cart
 {
     private float $price;
-    private float $tva;
+    private static float $tax = 0.2;
 
-    public function __construct(float $tva = 20) {
-        $this->tva = $tva;
-    }
-
-    public function getGrossPrice(): float 
+    //METHODS
+    public function getNetPrice(): float
     {
-        $tax = $this->price * ($this->tva / 100);
-        $grossPrice = $this->price + $tax;
-        return $grossPrice;
+         return ($this->price * self::$tax) + $this->price;
+         
     }
 
-    public function setPrice(float $price): self
+    public function getTaxAmount(): float
+    {
+        return $this->price * self::$tax;
+    }
+
+    //SETTERS
+    public function setPrice($price)
     {
         $this->price = $price;
         return $this;
     }
 
-    public function getPrice(): float
+    public static function setTax($tax): void
     {
-        return $this->price;
+        self::$tax = $tax;
     }
 
-    public function setTva(float $tva): self
-    {
-        $this->tva = $tva;
-        return $this;
-    }
-
-    public function getTva(): float
-    {
-        return $this->tva;
-    }
+   
 }

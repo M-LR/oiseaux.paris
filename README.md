@@ -30,8 +30,10 @@
   php -S localhost:8000
 ```
 
-## Tests
+## Tests exemples (phpUnit)
 ```sh
   //php unit
   php vendor/bin/phpunit tests/ExampleTest.php
+  php vendor/bin/phpunit tests/ExampleTest.php --filter testProductFunction
+  php vendor/bin/phpunit tests/ExampleTest.php --colors --testdox  
 ```

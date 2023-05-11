@@ -8,6 +8,7 @@ class Bird
    
     private $name;
     private $latinName;
+    private $price = 0;
     //Possibilité d'utiliser les enums php si besoin -> https://www.php.net/manual/fr/language.types.enumerations.php
     //https://youtu.be/Z69z1IZ1aQk?t=4512
     private const WEIGHT_UNIT = 'g';
@@ -16,6 +17,13 @@ class Bird
 
     public function __construct()
     {
-       echo self::SIZE_UNIT;
+      
+    }
+
+    public function getGeneralBirdInformations($divisor = 1, $currencySymbol = '€')
+    {
+        $priceAsCurrency = $this->price / $divisor;
+
+        return $currencySymbol . $priceAsCurrency . PHP_EOL;
     }
 }
