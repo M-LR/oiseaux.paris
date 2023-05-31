@@ -10,6 +10,3 @@ require '../vendor/autoload.php';
 
 
 $bird = new BirdController();
-var_dump($bird);
-var_dump($path);
-phpinfo();

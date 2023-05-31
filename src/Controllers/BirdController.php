@@ -3,12 +3,7 @@ declare(strict_types=1);
 
 namespace App\Controllers;
 
-/////////PROVISOIRE//////////////////
-require_once('../../config/global.php');
-//Autoloader composer
-//si modification relancer la commande composer dump-autoload
-require '../../vendor/autoload.php';
-/////////FIN DU PROVISOIRE///////////
+
 
 
 use App\Class\Bird;
@@ -31,6 +26,3 @@ class BirdController
    }
 }
 
-$bird = new BirdController();
-
-print $bird->birdInformations();
