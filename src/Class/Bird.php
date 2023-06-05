@@ -3,9 +3,14 @@ declare(strict_types=1);
 
 namespace App\Class;
 
-class Bird
+use App\Trait\IdentiableTrait;
+use App\Interface\Identifiable;
+
+
+class Bird implements Identifiable
 {
-   
+    use IdentiableTrait;
+
     private $name;
     private $latinName;
     private $price = 0;
