@@ -11,7 +11,7 @@ class CartTest extends TestCase
 
     protected function setUp():void
     {
-        Cart::setTax(0.196); // la valeur est définie à la class et non à l'objet donc à toutes les instances de cette classe par défaut
+        Cart::setTax(0.2); // la valeur est définie à la class et non à l'objet donc à toutes les instances de cette classe par défaut
         $this->cart = new Cart();
     }
 
@@ -43,7 +43,7 @@ class CartTest extends TestCase
          $netPrice = $this->cart->getNetPrice();
  
          // Make assertions
-         $this->assertEquals(119.6, $netPrice);
+         $this->assertEquals(120, $netPrice);
        
 
     }
